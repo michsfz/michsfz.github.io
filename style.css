@@ -4,7 +4,7 @@ html{
 
 .llogo{
 	background-color: #2F3035;
-	background-image: url(michsfz.github.io/img/1111.jpg);
+	background-image: url(michsfz.github.io/img/dinuguan.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -13,7 +13,7 @@ html{
 	left: 0;
 	right: 0;
 	z-index: -1;
-	filter: blur(4px);
+	filter: blur(2px);
 	}
 
 
@@ -33,28 +33,25 @@ header{
 		overflow: auto;
 		
 	}
-img{
-	max-height: 110px;
 
-}
 nav{
 		background-color: rgba(0,0,0,0.31);
-		height: 40px;
 		text-align: center;	
-		overflow: auto;
-		padding-top: 5px;
-		vertical-align: middle;
+		padding-top: 14px;
+		padding-bottom: 14px;
 	}
-a{
+nav a{
 	color: white;
 	text-decoration: none;
-	margin-right: 10px;
+	font-size: 13px;
+	padding-right: 10px;
+	padding-left: 10px;
 }
-a:hover{
+nav a:hover{
 	color: rgba(255,255,255,.50);
 
 }
-a:last-child{
+nav a:last-child{
 	margin-right: 0px;
 
 }
@@ -63,15 +60,35 @@ main{
 		text-align: center;
 		padding-top: 10px;
 		padding-bottom: 80px;
+		padding-left: 90px;
+		padding-right: 90px;
+		overflow: auto;
+		background-color: rgba(0,0,0,0.31);
+		margin-top: 20px;
+		margin-bottom: 20px;
+		display: flex;
+		flex-direction: row;	
+	}
+
+.index{
+		height: 400px;
+		text-align: center;
+		padding-top: 80px;
+		padding-bottom: 80px;
 		padding-left: 240px;
 		padding-right: 240px;
-		
-	}
-footer{
-	background-color: rgba(0,0,0,0.31);	
-	height: 100px;
-	text-align: center;
 
+}
+.index a{
+	text-decoration: underline;
+	color: white;   
+	font-size: 30px;
+}
+footer{
+	background-color: rgba(0,0,0,0.50);	
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 14px;
 		
 	}
 
@@ -98,7 +115,45 @@ p{
 }
 
 .fl1{
-	max-height: 40px;
+	height: 40px;
 	margin-right: 10px;
-	margin-top: 0px;
 }
+footer h2{
+	margin-bottom: 0px;
+}
+
+.card-text{
+	color: black;
+}
+
+
+
+.card-body{
+	background-color: rgba(255,255,0,0.40);	
+	height: 190px;
+}
+
+main div img{
+	height: 190px;
+
+}
+.container1{
+	display: flex;
+	justify-content: flex-start;
+}
+
+.card{
+	margin-right: 15px;
+	color: none;
+}
+
+.card-text, .card-title{
+	margin: auto;
+}
+
+
+
+
+
+
+
