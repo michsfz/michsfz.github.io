@@ -4,7 +4,7 @@ html{
 
 .llogo{
 	background-color: #2F3035;
-	background-image: url(michsfz.github.io/img/dinuguan.jpg);
+	background-image: url(img/dinuguan.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -56,10 +56,10 @@ nav a:last-child{
 
 }
 main{
-		height: 400px;
+		
 		text-align: center;
-		padding-top: 10px;
-		padding-bottom: 80px;
+		padding-top: 20px;
+		padding-bottom: 20px;
 		padding-left: 90px;
 		padding-right: 90px;
 		overflow: auto;
@@ -71,24 +71,27 @@ main{
 	}
 
 .index{
-		height: 400px;
+		padding-top: 50px;
+		padding-bottom: 50px;
 		text-align: center;
-		padding-top: 80px;
-		padding-bottom: 80px;
 		padding-left: 240px;
 		padding-right: 240px;
+		background-color: rgba(0,0,0,0.31);
+		margin-top: 50px;
+		
 
 }
 .index a{
 	text-decoration: underline;
 	color: white;   
 	font-size: 30px;
+
 }
 footer{
 	background-color: rgba(0,0,0,0.50);	
 	text-align: center;
 	padding-top: 5px;
-	padding-bottom: 14px;
+	padding-bottom: 5px;
 		
 	}
 
@@ -117,9 +120,14 @@ p{
 .fl1{
 	height: 40px;
 	margin-right: 10px;
+	transition: transform .2s;
 }
 footer h2{
 	margin-bottom: 0px;
+}
+
+.fl1:hover{
+	transform: scale(1.2);
 }
 
 .card-text{
@@ -130,11 +138,13 @@ footer h2{
 
 .card-body{
 	background-color: rgba(255,255,0,0.40);	
-	height: 190px;
+	height: 200px;
+	
 }
 
+
 main div img{
-	height: 190px;
+	height: 200px;
 
 }
 .container1{
@@ -145,15 +155,29 @@ main div img{
 .card{
 	margin-right: 15px;
 	color: none;
+	
 }
+
+
 
 .card-text, .card-title{
 	margin: auto;
 }
 
+section{
+	padding-bottom: 100px;
+	text-align: center;
+	margin-top: 50px;
+	
+}
+
+section h4{
+	color: white;
+	font-family: arial;
+}
 
 
-
-
-
-
+header img{
+	 animation: rubberBand; 
+ 	 animation-duration: 2s; 
+}
