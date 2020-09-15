@@ -1,0 +1,334 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/*fonts
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*.background-img{
+	background-image: url(https://images.creativemarket.com/0.1.0/ps/6817836/1820/1213/m1/fpnw/wm1/ppjyzfwgu3bslgx649uvkwoixqqyaecyqhdumlgebllo3eacpfu8n08enom0fnhj-.jpg?1565781144&s=37b74a19c3153bef88295533b08f6155);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	right: 0;
+	z-index: -1;
+	filter: blur(2px);
+
+}*/
+
+body{
+	background: #B24592;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #F15F79, #B24592);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #F15F79, #B24592); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+	font-family: 'Roboto', sans-serif;
+	color: white;
+
+}
+
+a {
+	color: white;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+
+}
+
+.container{
+	width: 1024px;
+	margin-left: auto;
+	margin-right: auto;
+	min-height: 300px;
+}
+
+/*HEADER SECTION*//*HEADER SECTION*//*HEADER SECTION*//*HEADER SECTION*//*HEADER SECTION*/
+header{
+	min-height: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid lightgrey;
+}
+
+nav a.e-button{
+	margin-left: 10px;
+	background-color: #DD5781;
+	color: white;
+	border: 1px solid white;
+	border-radius: 0;
+	box-shadow: 0px 0px 3px white;
+	
+}
+
+/*MAIN SECTION*//*MAIN SECTION*//*MAIN SECTION*//*MAIN SECTION*//*MAIN SECTION*/
+main{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-bottom: 50px;
+}
+
+.leftbox{
+	flex: 2;
+	padding-right: 7rem;
+
+}
+.leftbox h1{
+	font-size: 3.25rem;
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 1rem;
+	text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.228);
+	
+}
+.leftbox p{
+	line-height: 1.5rem;
+}
+
+.e-button{
+	background-color: white;
+	color: #F15F79;
+	padding: 11px 25px;
+	display: inline-block;
+	margin-top: 1.2rem;
+	border-radius: 12px;
+}
+
+.rightbox{ 
+	flex: 1.3; 
+}
+
+
+.rightbox img{
+	height: 300px;
+	width: 100%;
+	border-radius: 12px;
+}
+
+/*CARDS SECTION*/ /*CARDS SECTION*/ /*CARDS SECTION*/ /*CARDS SECTION*/ /*CARDS SECTION*/
+.cards{
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+
+}
+
+.card1{
+	background-image: url(https://images.pexels.com/photos/952478/pexels-photo-952478.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+	background-size: cover;
+	background-position: center;
+	min-height: 250px;
+	width: 30%;	
+	border-radius: 12px;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, .338);
+}
+.card1:hover{
+	transition: all 1s;
+	transform: scale(1.2);
+}
+
+
+.card2{
+	background-image: url(https://images.pexels.com/photos/3298687/pexels-photo-3298687.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+	background-size: cover;
+	background-position: left;
+	min-height: 250px;
+	width: 30%;
+	border-radius: 12px;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, .338);
+}
+.card2:hover{
+	transition: all 1s;
+	transform: scale(1.2);
+}
+
+.card2 p{
+	line-height: 1.5rem;
+}
+
+
+.card3{
+	background-image: url(https://images.pexels.com/photos/3800512/pexels-photo-3800512.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+	background-size: cover;
+	background-position: center;
+	min-height: 250px;
+	width: 30%;
+	border-radius: 12px;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, .338);
+}
+.card3:hover{
+	transition: all 1s;
+	transform: scale(1.2);
+}
+
+.cards h2{
+	font-size: 2rem;
+}
+
+.cards p{
+	margin-top: 10px;
+	font-size: 0.85rem;
+	line-height: 1.2rem;
+
+}
+
+.cards i{
+	font-size: 6rem;
+}
+
+.card1, .card2, .card3{
+	padding: 30px 30px 20px 30px;
+	box-sizing: border-box;
+}
+
+/*FOOTER SECTION*//*FOOTER SECTION*//*FOOTER SECTION*//*FOOTER SECTION*//*FOOTER SECTION*/
+footer{
+	min-height: 50px;
+	background-color: rgba(80,107,109,0.45);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+}
+
+
+footer p{
+	color: white;
+	font-size: .8rem;
+}
+
+
+/*MENU HERE*/
+.menu2-container {
+	background-color: #FBF8F0;
+	color: black;
+	font-family: roboto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.m2-leftbox{
+	flex: 2;
+	padding: 70px 50px 20px 60px; 
+}
+
+.m2-leftbox h1{
+	font-size: 3rem;
+	font-family: 'Open Sans';
+	margin-bottom: 0.5rem;
+}
+
+.m2-leftbox h2{
+	font-size: 1rem;
+	line-height: 1.2rem;
+}
+
+.m2-leftbox h3{
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-top: 2rem;
+	margin-bottom: 1.1rem;
+}
+
+.m2-leftbox h4{
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+.m2-leftbox h5{
+	margin-bottom: 1rem;
+}
+
+
+.m2-leftbox h4 .m2-price1 {
+	display: inline;
+	padding-left: 400px;
+}
+.m2-leftbox h4 .m2-price2 {
+	display: inline;
+	padding-left: 390px;
+}
+.m2-leftbox h4 .m2-price3 {
+	display: inline;
+	padding-left: 360px;
+}
+.m2-leftbox h4 .m2-price4 {
+	display: inline;
+	padding-left: 353px;
+}
+.m2-leftbox h4 .m2-price5 {
+	display: inline;
+	padding-left: 402px;
+}
+.m2-leftbox h4 .m2-price6 {
+	display: inline;
+	padding-left: 397px;
+}
+
+
+.m2-rightbox{
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+
+
+}
+
+.m2-rightbox img{
+	height: 200px;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
