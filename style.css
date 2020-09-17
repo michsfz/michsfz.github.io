@@ -69,12 +69,8 @@ body{
 	background: #B24592;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(to left, #F15F79, #B24592);  /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to left, #F15F79, #B24592); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	
-
-
 	font-family: 'Roboto', sans-serif;
 	color: white;
-
 }
 
 a {
@@ -88,7 +84,7 @@ a {
 	width: 1024px;
 	margin-left: auto;
 	margin-right: auto;
-	min-height: 300px;
+
 }
 
 /*HEADER SECTION*//*HEADER SECTION*//*HEADER SECTION*//*HEADER SECTION*//*HEADER SECTION*/
@@ -103,7 +99,7 @@ header{
 	border-bottom: 1px solid lightgrey;
 }
 
-nav a.e-button{
+nav .e-button{
 	margin-left: 10px;
 	background-color: #DD5781;
 	color: white;
@@ -111,6 +107,39 @@ nav a.e-button{
 	border-radius: 0;
 	box-shadow: 0px 0px 3px white;
 	
+}
+
+nav .e-button:hover .s-container{
+	display: block;
+	
+}
+
+nav .s-container{
+	position: absolute;
+	background-color: rgba(255,255,255,0.70);
+	margin-top: 13px;
+	padding-top: 2px;
+	width: 145px;
+	margin-left: -25px;
+	display: none;
+}
+
+nav .s-container .e-button{
+	background-color: rgba(255,255,255,0);
+	border-radius: 0;
+	box-shadow: 0px 0px 0px white;
+	display: block;
+	margin-top: 2px;
+	text-align: center;
+	border: none;
+	border-bottom: 1px solid grey;
+	margin-left: 0px;
+
+}
+
+nav .s-container .e-button a{
+	color: black;
+
 }
 
 /*MAIN SECTION*//*MAIN SECTION*//*MAIN SECTION*//*MAIN SECTION*//*MAIN SECTION*/
@@ -144,6 +173,11 @@ main{
 	display: inline-block;
 	margin-top: 1.2rem;
 	border-radius: 12px;
+}
+
+.leftbox .e-button:hover{
+	background-color: rgba(255, 255, 255,0.70);
+	
 }
 
 .rightbox{ 
@@ -233,6 +267,28 @@ main{
 	box-sizing: border-box;
 }
 
+/*TESTIMONIALS SECTION HERE*/
+.testimonials{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 50px;
+
+
+}
+.t-box{
+	border: 1px solid white;
+	width: 47%;
+	padding: 50px;
+	box-sizing: border-box;
+	margin-bottom: 3rem;
+
+}
+
+.testimonials .t-box p{
+	margin-bottom: .9rem;
+}
+
 /*FOOTER SECTION*//*FOOTER SECTION*//*FOOTER SECTION*//*FOOTER SECTION*//*FOOTER SECTION*/
 footer{
 	min-height: 50px;
@@ -240,7 +296,7 @@ footer{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: 50px;
+	
 }
 
 
@@ -331,4 +387,5 @@ footer p{
 	margin-top: 0.5rem;
 	margin-bottom: 0.5rem;
 }
+
 
