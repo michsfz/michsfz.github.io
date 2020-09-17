@@ -137,6 +137,13 @@ nav .s-container .e-button{
 
 }
 
+nav .s-container .e-button:last-child{
+	border-bottom: 0px solid grey;
+	
+
+}
+
+
 nav .s-container .e-button a{
 	color: black;
 
